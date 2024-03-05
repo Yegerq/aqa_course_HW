@@ -1,14 +1,18 @@
 # ******************Task#1 date 04.03.2024******************
 value = 0
-while value < 5:
-    value += 1
-    Enter_word = str(input("awaiting word"))
-    new_word = Enter_word[::-1]
-    if Enter_word == new_word:
+# Use a for loop with a range instead of while loop for clearer iteration
+for _ in range(5):
+    # Use descriptive variable names adhering to snake_case convention
+    enter_word = input("Enter a word: ")  # No need to convert input to string using str()
+     # Reverse the entered word using slicing
+    reversed_word = enter_word[::-1]
+    # Check if the word is a palindrome
+    if enter_word == reversed_word:
         print("+")
     else:
         print("-")
-print("successful end")
+# Move the print statement outside the loop for better readability
+print("Successful end")
 
 
 # ******************Task#2 date 04.03.2024******************
